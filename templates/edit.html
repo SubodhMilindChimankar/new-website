@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block body %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('     {{url_for('static',filename='assets/img/home-bg.jpg')}}    ')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Welcome to new page</h1>
+                            <span class="subheading">Manage the post</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+<h1>Edit/Add</h1>
+<hr>
+
+                    <a href="/dashboard"><button class="btn btn-primary">Dashboard Home</button></a>
+                    <a href="/logout"><button class="btn btn-primary">Logout</button></a>
+                    <hr>
+
+                  <form action="/edit/{{srno}}" method="post">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Title</label>
+    <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp" placeholder="title" value="{{post.title}}">
+   
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Slug</label>
+    <input type="text" class="form-control" id="slug" name="slug" placeholder="Slug" value="{{post.slug}}">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputPassword1">Tagline</label>
+    <input type="text" class="form-control" id="tline" name="tline" placeholder="tagline" value="{{post.tagline}}"> 
+  </div>
+   <div class="form-group">
+    <label for="exampleInputPassword1">Image</label>
+    <input type="text" class="form-control" id="image" name="image" placeholder="image" value="{{post.image}}">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputPassword1">Content</label>
+    <input type="text" class="form-control" id="content" name="content" placeholder="content" value="{{post.content}}">
+  </div>
+   
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+ {% endblock %}
+  

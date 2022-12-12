@@ -1,0 +1,29 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql://root:@localhost/codingthunder",
+    "prod_uri": "mysql://root:@localhost/codingthunder",
+    "fb_url": "https://facebook.com/codingthunder",
+    "tw_url":"https://twitter.com/codingthunder",
+    "gh_url": "https://github.com/codingthunder",
+    "blog_name": "Coding Thunder",
+    "blog_heading":"A platform to learn progamming language like python",
+    "gmail-user": "subodh384@gmail.com",
+    "gmail-password": "wvygffwlvwltoflv",
+    "about_content": "this is devolpment server do not it in a production deployment use a production wsgi server instsead",
+    "no_of_posts": 2,
+    "login_image": "1.svg",
+    "admin_user":"abc",
+    "admin_password": "xyz",
+    "upload_location": "C:\\Users\\HP\\PycharmProjects\\Flaskprogram"
+
+
+
+
+  }
+
+
+}
+
+
